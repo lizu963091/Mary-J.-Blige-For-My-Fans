@@ -333,6 +333,59 @@ document.addEventListener('visibilitychange', ()=>{if(document.hidden){resetPlay
 }
 </style>
 
+        <!-- Download Another Movie Button -->
+<a href="https://your-download-link.com" class="download-btn" target="_blank" rel="noopener">
+  Download Another Movie
+</a>
+
+<style>
+/* Button Style */
+.download-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 65, 108, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Animation */
+.download-btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.15);
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+}
+
+.download-btn:hover::before {
+  top: 0;
+  left: 0;
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 65, 108, 0.5);
+}
+
+/* Click Animation */
+.download-btn:active {
+  transform: scale(0.95);
+}
+</style>
+
+
 
 
 <p>&nbsp;</p><h2 data-end="478" data-start="393">Mary J. Blige: For My Fans – A Cinematic Celebration of Music, Emotion, and Legacy</h2>
